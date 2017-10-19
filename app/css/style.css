@@ -30,6 +30,7 @@ a {
 a:hover, a:focus {
     text-decoration: none;
     color: inherit;
+    outline: none;
 }
 
 img {
@@ -168,6 +169,51 @@ header {
     opacity: .8;
 }
 
+.slicknav_menu {
+    display: none;
+}
+
+.slicknav_btn {
+    margin: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    background-color: #111;
+}
+
+.slicknav_menu {
+    padding: 0;
+    background-color: #111;
+}
+
+.slicknav_nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    text-align: right;
+    background-color: #111;
+}
+
+.slicknav_nav a:hover {
+    border: none;
+    color: #fff;
+    background-color: #111;
+}
+
+.slicknav_nav a:focus {
+    opacity: .75;
+}
+
+@media (max-width: 991px) {
+    .slicknav_menu {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+}
+
 .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -241,6 +287,16 @@ header {
     font-size: 30px;
 }
 
+@media (max-width: 991px) {
+    .header {
+        height: 500px;
+    }
+
+    .text-description {
+        font-size: 17px;
+    }
+}
+
 .about {
     padding-top: 100px;
 }
@@ -311,6 +367,37 @@ header {
 
 .about .btn {
     margin-top: 50px;
+}
+
+@media (max-width: 1199px) {
+    .about .about-text {
+        margin-left: -115px;
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-img {
+        display: none;
+    }
+
+    .about .about-text {
+        margin: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .about .line {
+        margin: 20px auto;
+    }
+
+    .about-description {
+        max-width: none;
+    }
+
 }
 
 .line.min-line {
@@ -386,6 +473,13 @@ header {
     margin: 40px 0 90px;
 }
 
+@media (max-width: 991px) {
+    .team-wrap {
+        margin-bottom: 30px;
+    }
+
+}
+
 .our-services .form-border {
     width: 120px;
     height: 120px;
@@ -425,6 +519,30 @@ header {
 .our-clients .carousel-indicators,
 .testimonials .carousel-indicators {
     margin-bottom: -100px;
+}
+
+@media (max-width: 1199px) {
+    .our-clients-item-wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .our-clients-item-wrap img + img {
+        margin-top: 30px;
+    }
+
+    .our-clients-item-wrap img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .our-services .row > div {
+        margin-top: 30px;
+    }
 }
 
 .nav-tabs {
@@ -525,7 +643,7 @@ header {
 /*FOOTER*/
 
 footer {
-    padding: 30px;
+    padding: 30px 0;
     background-color: #222;
 }
 
@@ -560,3 +678,4 @@ footer .text-title {
 .contact-footer li:hover {
     border-color: #fcac45;
 }
+
