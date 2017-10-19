@@ -675,14 +675,14 @@
                 </div>
             </div>
     </section>
-    <section class="contact-us default-section text-center black-text">
+    <section class="contact-us default-section black-text">
         <div class="container">
-            <div class="text-title">
+            <div class="text-title text-center ">
                 <p>take a look at <span>our services</span></p>
             </div>
             <div class="line"></div>
             <div class="line min-line"></div>
-            <div class="default-description">
+            <div class="default-description text-center ">
                 <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
                     of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
                     popular during the Renaissance. </p>
@@ -691,16 +691,20 @@
                 <form class="form-inline">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="form-group col-md-6">
-                            <label for="exampleInputName2">Name</label>
-                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Your Name">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="exampleInputEmail2">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail2"
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email"
                                    placeholder="Your Email">
                         </div>
-                        <div class="form-group col-md-12">
-                            <textarea name="userMessage" class="form-control" placeholder="Message"></textarea>
+                        <div class="textarea-wrap form-group col-md-12">
+                            <label for="message">Message</label>
+                            <textarea name="userMessage" class="form-control" placeholder="Message" id="message"></textarea>
+                        </div>
+                        <div class="form-group pull-right">
+                            <button type="submit" class="btn btn-contact">SEND</button>
                         </div>
                     </div>
                 </form>
