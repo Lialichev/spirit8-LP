@@ -551,6 +551,16 @@ header {
     margin-top: 30px;
 }
 
+@media (max-width: 991px) {
+    .tab-section .tab-content .row{
+        margin-top: auto;
+    }
+
+    .tab-section .tab-content .row > div{
+        margin-top: 30px;
+    }
+}
+
 .testimonials .text-title p {
     font-weight: 600;
 }
