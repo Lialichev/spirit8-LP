@@ -107,8 +107,7 @@ button {
 }
 
 .btn.btn-contact:hover {
-    background-color: #999;
-    color: #000;
+    opacity: .75;
 }
 
 .line {
@@ -465,6 +464,8 @@ header {
     display: block;
     text-align: left;
     margin-bottom: 10px;
+    font-weight: 400;
+    color: #636363;
 }
 
 .form-inline .form-control {
@@ -485,8 +486,42 @@ header {
     margin: 30px 0;
 }
 
-.contact-us .form-group button{
+.contact-us .form-group button {
     margin-right: 15px;
 }
 
+/*FOOTER*/
 
+footer {
+    padding: 30px;
+    background-color: #222;
+}
+
+footer .text-title {
+    font-size: 12px;
+    letter-spacing: .025em;
+}
+
+.contact-footer li {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: 3px solid #b2b2b2;
+    border-radius: 50%;
+    position: relative;
+}
+
+.contact-footer li + li {
+    margin-left: 10px;
+}
+
+.contact-footer li a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.contact-footer li:hover {
+    border-color: #fcac45;
+}
