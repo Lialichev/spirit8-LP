@@ -264,7 +264,7 @@ header {
 
 @media (max-width: 991px) {
     .header {
-        height: 500px;
+        height: 50vh;
     }
 
     .text-description {
@@ -492,16 +492,22 @@ header {
 }
 
 @media (max-width: 1199px) {
+    .our-clients-item-wrap img + img {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .our-clients-item-wrap img + img {
+        margin-top: 50px;
+    }
+
     .our-clients-item-wrap {
         flex-direction: column;
     }
 
-    .our-clients-item-wrap img + img {
-        margin-top: 30px;
-    }
-
-    .our-clients-item-wrap img {
-        max-width: 100%;
+    .our-clients-item-wrap img{
+        width: 30%;
     }
 }
 
@@ -552,11 +558,11 @@ header {
 }
 
 @media (max-width: 991px) {
-    .tab-section .tab-content .row{
+    .tab-section .tab-content .row {
         margin-top: auto;
     }
 
-    .tab-section .tab-content .row > div{
+    .tab-section .tab-content .row > div {
         margin-top: 30px;
     }
 }
